@@ -1,0 +1,7 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    container_name: bikestore-broker
+    ports:
+      - "5672:5672"
+      - "15672:15672"   # consola web, usuario guest / guest
